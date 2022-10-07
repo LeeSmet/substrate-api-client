@@ -55,7 +55,12 @@ pub fn state_get_metadata() -> Value {
 }
 
 pub fn state_get_metadata_with_id(id: u32) -> Value {
-    json_req("state_getMetadata", Value::Null, id)
+    //json_req("state_getMetadata", Value::Array(vec![Value::String("0x01be34cbaa9b10c39bb3277da48cce4721eed0efbae6fdd0486604502ff2f4a0")]), id)
+    json_req(
+        "state_getMetadata",
+        json!(["0x01be34cbaa9b10c39bb3277da48cce4721eed0efbae6fdd0486604502ff2f4a0"]),
+        id,
+    )
 }
 
 pub fn state_get_runtime_version() -> Value {
