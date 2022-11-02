@@ -58,7 +58,8 @@ pub fn state_get_metadata_with_id(id: u32) -> Value {
     //json_req("state_getMetadata", Value::Array(vec![Value::String("0x01be34cbaa9b10c39bb3277da48cce4721eed0efbae6fdd0486604502ff2f4a0")]), id)
     json_req(
         "state_getMetadata",
-        json!(["0x01be34cbaa9b10c39bb3277da48cce4721eed0efbae6fdd0486604502ff2f4a0"]),
+        //json!(["0x01be34cbaa9b10c39bb3277da48cce4721eed0efbae6fdd0486604502ff2f4a0"]),
+        json!(["0xea07b528ea3bef6cc9af6d8c3ae68c090009a17a63cd18ce796257a849d507bf"]),
         id,
     )
 }
